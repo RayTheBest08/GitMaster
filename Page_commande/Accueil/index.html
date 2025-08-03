@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitMaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <a href="#" class="logo">
+                    <img src="../images/logogitMaster.jpg" alt="logo-gitmaster" class="logo-image">
+                    <span>GitMaster</span>
+                </a>
+            </div>
+        
+            <div class="navbar-center">
+                <ul class="nav-links">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Commande</a></li>
+                    <li><a href="#">Vs Code</a></li>
+                    <li><a href="#">A Propos</a></li>
+                   
+            
+                </ul>
+                
+            </div>
+        
+            </div>
+            <div class="navbar-right">
+                 <div class="dark-ligth">
+                <button class="dark-mode-toggle">
+                    <span class="toggle-icon">🌙</span>
+                </button>
+                 </div>
+
+                <button class="login-button">Commencer  <i class="fas fas fa-arrow-right"></i> </button>
+            </div>
+
+            <div class="menu-burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Découvrir les commandes GitHub</h1>
+                <p>Plateforme pour apprendre Git et GitHub sans la complexité du terminal.</p>
+                <div class="search-bar-container">
+                     <div class="search-input-group">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" placeholder="git init, git add, git commit">
+                    </div> 
+                    <button class="search-button">Rechercher</button>
+                </div>
+                <!-- <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                    <a href="#about">About</a>
+                    <a href="#base">Base</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#custom">Custom</a>
+                    <a href="#support">Support</a>
+                    <a href="#tools">Tools</a>
+                </div>
+                </div> -->
+            </div>
+            <div class="hero-image">
+                <img src="../images/hero-image.jpg" alt="GitMaster Hero Image" class="hero-img">
+            </div>
+        </section>
+
+    </header>
+
+
+    <main>
+         <section class="command-list">
+           <h2>listes des commandes Git </h2>
+           <div class="config">
+            <h3>1. CONFIGURATION DE GIT</h3>
+            <ul>
+                <li><code>git config --global user.name "Votre Nom"</code></li>
+                <li><code>git config --global user.email "votre.email@example.com"</code></li>
+            </ul>
+         </div>
+           <div class="init"><h3>2. INITIALISATION D'UN DÉPÔT</h3></div>
+           <div class="add"><h3>3. AJOUTER DES FICHIERS</h3></div>
+           <div class="commit"><h3>4. VALIDATION DES MODIFICATIONS</h3></div>
+           <div class="push"><h3>5. ENVOYER DES MODIFICATIONS</h3></div>
+           <div class="pull"><h3>6. RÉCUPÉRER DES MODIFICATIONS</h3></div>
+         </section>
+        <aside class="command-description">
+            <h2>Description</h2>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+           
+            <div id="footerGit">
+                 <div class="footer-logo">
+                <img src="../images/logogitMaster.jpg" alt="logo-gitmaster" class="logo-image">
+                <h2>GitMaster</h2>
+                 </div>
+            <div class="footer-text">
+                
+                <p>La plateforme visuelle pour<br>
+                apprendre Git et GitHub sans<br>
+                la complexité du terminal.</p>
+            </div>
+            </div>
+
+            <div id="footerNav">
+                <h2>Navigation</h2>
+                <nav aria-label="Navigation secondaire">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#">Commandes</a></li>
+                        <li><a href="#">VS Code</a></li>
+                        <li><a href="#">À propos</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="footerNews">
+                <h2>Newsletter</h2>
+                <p>Abonnez-vous pour recevoir des<br>mises à jour et des conseils Git</p>
+                <form>
+                    <input type="email" id="email" placeholder="Votre email" required aria-label="Votre adresse email">
+                    <button type="submit" aria-label="Envoyer l'email"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="bottom-container">
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2023 GitMaster. Tous droits réservés.</p>
+            <ul>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Confidentialité</a></li>
+                <li><a href="#">Conditions d'utilisation</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+
+</body>
+</html>
