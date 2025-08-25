@@ -382,9 +382,9 @@ header button {
   padding: 10px;
   color: white;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-right: 20px;
   box-shadow: 0px 0px 10px #2475ff;
   transition: all 0.3s ease;
@@ -460,6 +460,7 @@ header img:hover {
 #section-maitriser {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 5rem;
 }
 
@@ -486,11 +487,13 @@ span {
 
 .btn1 {
   background-color: #2475ff;
-  padding: 10px;
+  font-size: 1.1rem;
+  padding: 15px 20px;
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: 600;
   transition: all 0.3s ease;
   animation: buttonGlow 2s ease-in-out infinite;
 }
@@ -502,7 +505,9 @@ span {
 
 .btn2 {
   background-color: white;
-  padding: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 15px 20px;
   color: #2475ff;
   border: none;
   border-radius: 10px;
@@ -536,6 +541,8 @@ span {
   margin-top: 3.5rem;
   transition: transform 0.3s ease;
   animation: cardFloat 4s ease-in-out infinite;
+  max-width: 100%;
+  height: auto;
 }
 
 #section-maitriser img:hover {
@@ -544,10 +551,11 @@ span {
 
 .flex-how-learning {
   display: flex;
-  gap: px;
+  gap: 20px;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   margin-top: 4rem;
+  flex-wrap: wrap;
 }
 
 .line-how-learning {
@@ -582,7 +590,6 @@ span {
 
 .line-how-learning h3,
 p {
-  /* margin-top: 1rem; */
   margin-left: 1rem;
 }
 
@@ -605,7 +612,6 @@ p {
 /* footer */
 
 footer {
-  /* margin-top: 5rem; */
   color: white;
   animation: fadeInUp 1s ease-out 0.9s both;
 }
@@ -708,4 +714,220 @@ footer a {
 
 .footer2-gitmaster a:hover {
   border-bottom: #2475ff 3px solid;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  #header-gitmaster {
+    width: 94%;
+    margin-left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #section-maitriser h3 {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 992px) {
+  #section-maitriser {
+    padding-top: 7rem;
+    gap: 30px;
+  }
+  #section-maitriser h3 {
+    font-size: 44px;
+    text-align: left;
+  }
+  .line-how-learning {
+    width: 18rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #header-gitmaster {
+    height: 4.5rem;
+    padding: 0 12px;
+  }
+  nav li a {
+    margin: 8px;
+  }
+  #section-maitriser {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  #section-maitriser h3 {
+    font-size: 36px;
+  }
+  #explore-btn {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .div1-logo-gitmaster {
+    font-size: 1.25rem;
+  }
+  .line-how-learning {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    padding-bottom: 16px;
+  }
+  .icons-how-learning {
+    width: 46px;
+    height: 46px;
+  }
+  .footer1-gitmaster {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+    padding: 24px 16px;
+    text-align: center;
+  }
+  .footer2-gitmaster {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  header button {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    margin-right: 8px;
+  }
+  #section-maitriser h3 {
+    font-size: 30px;
+  }
+  #how-learning {
+    margin: 3rem 0 0 0;
+    height: auto;
+    padding-bottom: 24px;
+  }
+  .ul-footer li a {
+    padding-bottom: 6px;
+  }
+  .floating-ball.ball-2,
+  .floating-ball.ball-4 {
+    opacity: 0.4;
+    filter: blur(1px);
+  }
+}
+
+@media (max-width: 420px) {
+  #header-gitmaster {
+    width: 96%;
+    height: 4rem;
+  }
+  nav li a {
+    margin: 6px;
+    font-size: 0.95rem;
+  }
+  .div2-logo-gitmaster {
+    gap: 6px;
+  }
+  #section-maitriser h3 {
+    font-size: 26px;
+  }
+  .btn1, .btn2 {
+    width: 100%;
+  }
+  #explore-btn {
+    gap: 8px;
+  }
+  .line-how-learning {
+    max-width: 100%;
+  }
+  .floating-ball.ball-3,
+  .floating-ball.ball-5 {
+    display: none;
+  }
+}
+
+#cta-section {
+  margin: 5rem 0 5rem 0;
+  background-color: #190033;
+  border-radius: 0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.cta-title {
+  font-size: 2.2rem;
+}
+
+.cta-subtitle {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 20px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.cta-primary {
+  background-color: #2475ff;
+  color: white;
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(36, 117, 255, 0.4);
+}
+
+.cta-secondary {
+  background-color: white;
+  color: #2475ff;
+}
+
+.cta-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  #cta-section {
+    margin: 3.5rem 1rem 0 1rem;
+  }
+  .cta-title {
+    font-size: 1.8rem;
+  }
+  .cta-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .cta-title {
+    font-size: 1.6rem;
+  }
+  .cta-buttons a {
+    width: 100%;
+    text-align: center;
+  }
 }
