@@ -511,174 +511,138 @@ header img:hover {
   gap: 10px;
 }
 
-/* section hero */
-
-#section-maitriser {
-  padding-top: 6rem;
-  animation: fadeInUp 1s ease-out 0.3s both;
+/* Intro */
+.intro { /* Section d'introduction */
+    text-align: center; /* Centrage du texte */
+    margin: 64px auto 32px auto; /* Marges verticales et centrage horizontal */
+    max-width: 800px; /* Largeur max */
+    margin-top: 110px;
 }
 
-#section-maitriser p {
-  line-height: 25px;
+.intro h1 { /* Titre principal */
+    font-size: 2.8rem; /* Grande taille */
+    font-weight: 900; /* Très gras */
+    margin-bottom: 12px; /* Espace sous le titre */
+    color: #F4F4F9; /* Blanc craie */
 }
 
-#section-maitriser {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5rem;
+.intro .subtitle { /* Sous-titre */
+    font-size: 1.3rem; /* Taille moyenne */
+    color: #A9A9B3; /* Gris argenté */
+    font-weight: 500; /* Moyen */
 }
 
-#section-maitriser h3 {
-  font-size: 65px;
-  color: white;
+/* Cards */
+.cards { /* Conteneur des cartes */
+    display: flex; /* Flexbox horizontal */
+    justify-content: center; /* Centrage horizontal */
+    gap: 32px; /* Espace entre les cartes */
+    margin: 40px auto 0 auto; /* Marge en haut et centrage */
+    flex-wrap: wrap; /* Retour à la ligne sur petits écrans */
+    max-width: 1200px; /* Largeur max */
 }
 
-span {
-  color: #2475ff;
-  background: linear-gradient(90deg, #2475ff, #2d9cdb, #2475ff);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: textShine 3s linear infinite;
+.card { /* Carte individuelle */
+    background: #190033; /* Fond gris ardoise */
+    border-radius: 18px; /* Coins arrondis */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13); /* Ombre douce */
+    padding: 32px 28px 28px 28px; /* Espace interne */
+    width: 300px; /* Largeur fixe */
+    display: flex; /* Flexbox verticale */
+    flex-direction: column; /* Colonne */
+    align-items: center; /* Centrage horizontal */
+    transition: transform 0.18s, box-shadow 0.18s; /* Animation au hover */
 }
 
-#section-maitriser p {
-  font-size: 20px;
-  color: white;
-  margin-top: 1rem;
+.card:hover { /* Effet au survol */
+    transform: translateY(-8px) scale(1.03); /* Légère élévation */
+    box-shadow: 0 8px 32px rgba(241,80,47,0.13); /* Ombre accentuée */
 }
 
-.btn1 {
-  background-color: #2475ff;
-  font-size: 1.1rem;
-  padding: 15px 20px;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  animation: buttonGlow 2s ease-in-out infinite;
+.card img { /* Image de la carte */
+    width: 72px; /* Taille fixe */
+    height: 72px;
+    margin-bottom: 18px; /* Espace sous l'image */
+    border-radius: 12px; /* Coins arrondis */
+    background: #1A1A1D; /* Fond noir carbone */
+    object-fit: contain; /* Garde le ratio */
 }
 
-.btn1:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(36, 117, 255, 0.4);
+.card h2 { /* Titre de la carte */
+    font-size: 1.5rem; /* Taille moyenne */
+    font-weight: 800; /* Très gras */
+    margin-bottom: 10px; /* Espace sous le titre */
+    color: #007ACC; /* Bleu accent */
 }
 
-.btn2 {
-  background-color: white;
-  font-weight: 600;
-  font-size: 1.1rem;
-  padding: 15px 20px;
-  color: #2475ff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.card p { /* Texte de la carte */
+    font-size: 1.08rem; /* Taille normale */
+    color: #A9A9B3; /* Gris argenté */
+    text-align: center; /* Centré */
+    font-weight: 500; /* Moyen */
 }
 
-.btn2:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+/* Contribuer */
+.contribuer { /* Bloc contribuer */
+    background: linear-gradient(90deg, #190033 80%, #4228b6 100%); /* Dégradé gris vers noir */
+    border-radius: 32px; /* Coins arrondis */
+    margin: 64px auto 0 auto; /* Marge en haut et centrage */
+    max-width: 1100px; /* Largeur max */
+    padding: 48px 40px 32px 40px; /* Espace interne */
+    position: relative; /* Pour enfants absolus */
+    box-shadow: 0 4px 32px rgba(0,0,0,0.10); /* Ombre douce */
+    display: flex; /* Flexbox verticale */
+    flex-direction: column;
+    align-items: center;
 }
 
-#explore-btn {
-  margin-top: 1rem;
-  display: flex;
-  gap: 10px;
+.contribuer-content h2 { /* Titre contribuer */
+    font-size: 2rem; /* Taille grande */
+    font-weight: 800; /* Très gras */
+    color: #ffffff; /* Orange Git */
+    margin-bottom: 12px; /* Espace sous le titre */
+    text-align: center; /* Centré */
 }
 
-#how-learning {
-  margin-top: 5rem;
-  background-color: #190033;
-  height: 30rem;
-  animation: fadeInUp 1s ease-out 0.6s both;
+.contribuer-content p { /* Texte contribuer */
+    font-size: 1.15rem; /* Taille normale */
+    color: #A9A9B3; /* Gris argenté */
+    text-align: center; /* Centré */
+    margin-bottom: 24px; /* Espace sous le texte */
 }
 
-#how-learning .h3 {
-  padding-top: 2rem;
+.github-btn { /* Bouton GitHub */
+    display: flex; /* Flexbox horizontal */
+    align-items: center; /* Centrage vertical */
+    background: #007ACC; /* Bleu accent */
+    color: #F4F4F9; /* Blanc craie */
+    border-radius: 12px; /* Coins arrondis */
+    padding: 10px 28px; /* Espace interne */
+    font-size: 1.1rem; /* Taille du texte */
+    font-weight: 700; /* Gras */
+    cursor: pointer; /* Curseur main */
+    box-shadow: 0 2px 8px rgba(0,122,204,0.10); /* Ombre légère */
+    transition: background 0.2s; /* Animation couleur */
+    margin-top: 12px; /* Espace au-dessus */
+    gap: 14px; /* Espace entre image et texte */
 }
 
-#section-maitriser img {
-  margin-top: 3.5rem;
-  transition: transform 0.3s ease;
-  animation: cardFloat 4s ease-in-out infinite;
-  max-width: 100%;
-  height: auto;
+.github-btn img { /* Logo GitHub */
+    width: 32px; /* Taille fixe */
+    height: 32px;
+    margin-right: 8px; /* Espace à droite */
 }
 
-#section-maitriser img:hover {
-  transform: scale(1.05);
+.github-btn:hover { /* Effet au survol */
+    background: #ffffff; /* Orange Git */
+    color: #F4F4F9; /* Blanc craie */
 }
 
-.flex-how-learning {
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  align-items: stretch;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-}
-
-.line-how-learning {
-  background-color: #182e7a;
-  border-radius: 10px;
-  border: none;
-  box-shadow: 1px 1px 1px 1px #182e7a;
-  color: white;
-  width: 20rem;
-  height: 12rem;
-  box-shadow: 2px 2px 2px 2px #c4cff7;
-  transition: all 0.3s ease;
-  animation: cardFloat 3s ease-in-out infinite;
-}
-
-.line-how-learning:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.line-how-learning:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.line-how-learning:nth-child(3) {
-  animation-delay: 2s;
-}
-
-.line-how-learning:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 35px rgba(196, 207, 247, 0.4);
-}
-
-.line-how-learning h3,
-p {
-  margin-left: 1rem;
-}
-
-.icons-how-learning {
-  background-color: #2475ff;
-  width: 50px;
-  height: 50px;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  text-align: center;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  animation: iconBounce 2s ease-in-out infinite;
-}
-
-.icons-how-learning:hover {
-  transform: scale(1.1);
-}
-
-/* footer */
-
+/* Footer */
 footer {
   color: white;
   animation: fadeInUp 1s ease-out 0.9s both;
+  margin-top: 50px;
 }
 
 footer li {
@@ -780,246 +744,40 @@ footer a {
 .footer2-gitmaster a:hover {
   border-bottom: #2475ff 3px solid;
 }
-
 /* Responsive */
-@media (max-width: 1200px) {
-  #header-gitmaster {
-    width: 94%;
-    margin-left: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  #section-maitriser h3 {
-    font-size: 56px;
-  }
+@media (max-width: 1100px) {
+    .cards {
+        flex-direction: column; /* Cartes en colonne */
+        align-items: center; /* Centrage */
+    }
+    .footer-section {
+        width: 45%; /* Largeur plus grande */
+        margin-bottom: 32px; /* Plus d'espace en bas */
+    }
+    .contribuer {
+        padding: 32px 10px; /* Moins de padding horizontal */
+    }
 }
 
-@media (max-width: 992px) {
-  #section-maitriser {
-    padding-top: 7rem;
-    gap: 30px;
-  }
-
-  #section-maitriser h3 {
-    font-size: 44px;
-    text-align: left;
-  }
-
-  .line-how-learning {
-    width: 18rem;
-  }
-}
-
-@media (max-width: 768px) {
-  #header-gitmaster {
-    height: 4.5rem;
-    padding: 0 12px;
-  }
-
-  nav li a {
-    margin: 8px;
-  }
-
-  #section-maitriser {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  #section-maitriser h3 {
-    font-size: 36px;
-  }
-
-  #explore-btn {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .div1-logo-gitmaster {
-    font-size: 1.25rem;
-  }
-
-  .line-how-learning {
-    width: 100%;
-    max-width: 420px;
-    height: auto;
-    padding-bottom: 16px;
-  }
-
-  .icons-how-learning {
-    width: 46px;
-    height: 46px;
-  }
-
-  .footer1-gitmaster {
-    flex-direction: column;
-    height: auto;
-    gap: 20px;
-    padding: 24px 16px;
-    text-align: center;
-  }
-
-  .footer2-gitmaster {
-    flex-direction: column;
-    height: auto;
-    gap: 10px;
-    padding: 12px 0;
-  }
-}
-
-@media (max-width: 576px) {
-  header button {
-    padding: 8px 12px;
-    font-size: 0.95rem;
-    margin-right: 8px;
-  }
-
-  #section-maitriser h3 {
-    font-size: 30px;
-  }
-
-  #how-learning {
-    margin: 3rem 0 0 0;
-    height: auto;
-    padding-bottom: 24px;
-  }
-
-  .ul-footer li a {
-    padding-bottom: 6px;
-  }
-
-  .floating-ball.ball-2,
-  .floating-ball.ball-4 {
-    opacity: 0.4;
-    filter: blur(1px);
-  }
-}
-
-@media (max-width: 420px) {
-  #header-gitmaster {
-    width: 96%;
-    height: 4rem;
-  }
-
-  nav li a {
-    margin: 6px;
-    font-size: 0.95rem;
-  }
-
-  .div2-logo-gitmaster {
-    gap: 6px;
-  }
-
-  #section-maitriser h3 {
-    font-size: 26px;
-  }
-
-  .btn1,
-  .btn2 {
-    width: 100%;
-  }
-
-  #explore-btn {
-    gap: 8px;
-  }
-
-  .line-how-learning {
-    max-width: 100%;
-  }
-
-  .floating-ball.ball-3,
-  .floating-ball.ball-5 {
-    display: none;
-  }
-}
-
-#cta-section {
-  margin: 5rem 0 5rem 0;
-  background-color: #190033;
-  border-radius: 0;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.cta-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem;
-  text-align: center;
-  color: white;
-}
-
-.cta-title {
-  font-size: 2.2rem;
-}
-
-.cta-subtitle {
-  margin-top: 0.75rem;
-  font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.cta-buttons {
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.cta-btn {
-  display: inline-block;
-  padding: 20px 25px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-}
-
-.cta-primary {
-  background-color: #2475ff;
-  color: white;
-}
-
-.cta-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(36, 117, 255, 0.4);
-}
-
-.cta-secondary {
-  background-color: white;
-  color: #2475ff;
-}
-
-.cta-secondary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
-}
-
-@media (max-width: 768px) {
-  #cta-section {
-    margin: 3.5rem 1rem 0 1rem;
-  }
-
-  .cta-title {
-    font-size: 1.8rem;
-  }
-
-  .cta-subtitle {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .cta-title {
-    font-size: 1.6rem;
-  }
-
-  .cta-buttons a {
-    width: 100%;
-    text-align: center;
-  }
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column; /* Menu vertical */
+        height: auto; /* Hauteur auto */
+        padding: 18px 10px; /* Moins de padding */
+    }
+    .logo {
+        margin: 0 0 12px 0; /* Espace sous le logo */
+    }
+    .cards {
+        gap: 18px; /* Moins d'espace entre cartes */
+    }
+    .footer-section {
+        width: 100%; /* Pleine largeur */
+        margin-bottom: 24px; /* Espace en bas */
+    }
+    .footer-bottom {
+        flex-direction: column; /* Empilement vertical */
+        gap: 8px; /* Espace entre éléments */
+        align-items: flex-start; /* Alignement à gauche */
+    }
 }

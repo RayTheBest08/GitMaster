@@ -13,33 +13,41 @@
 </head>
 
 <body>
+
+  <div class="floating-ball ball-1"></div>
+  <div class="floating-ball ball-2"></div>
+  <div class="floating-ball ball-3"></div>
+  <div class="floating-ball ball-4"></div>
+  <div class="floating-ball ball-5"></div>
+  <div class="floating-ball ball-6"></div>
+
   <header>
-    <div id="hero">
-      <div id="header-gitmaster">
-        <div class="div1-logo-gitmaster" style="padding-left: 20px;">
-          <div><img src="./assets/Gitmasterlogo.jpg" alt="Logo" style="border-radius: 50px;"/></div>
-          <div>
-            <h3>GitMaster</h3>
-          </div>
+    <div id="header-gitmaster">
+      <div class="div1-logo-gitmaster" style="padding-left: 20px">
+        <div>
+          <img src="./assets/Gitmasterlogo.jpg" alt="Logo" style="border-radius: 50px" />
         </div>
-        <nav>
-          <ul>
-            <li><a href="accueil">Accueil</a></li>
-            <li><a href="commandes">Commandes</a></li>
-            <li><a href="vscode">VS Code</a></li>
-            <li><a href="apropos">A Propos</a></li>
-          </ul>
-        </nav>
-        <div class="div2-logo-gitmaster">
-          <label class="toggle-switch">
-            <input type="checkbox" id="darkmode-toggle">
-            <span class="slider"></span>
-          </label>
-          <div>
-            <button style="margin-right: 20px;">
-              Commencer <i class="fa-solid fa-arrow-right"></i>
-            </button>
-          </div>
+        <div>
+          <h3>GitMaster</h3>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="accueil">Accueil</a></li>
+          <li><a href="commandes">Commandes</a></li>
+          <li><a href="vscode">VS Code</a></li>
+          <li><a href="apropos">A Propos</a></li>
+        </ul>
+      </nav>
+      <div class="div2-logo-gitmaster">
+        <label class="toggle-switch">
+          <input type="checkbox" id="darkmode-toggle" />
+          <span class="slider"></span>
+        </label>
+        <div>
+          <button style="margin-right: 20px">
+            Commencer <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -122,21 +130,35 @@
         </div>
       </div>
     </section>
+
+    <!-- Section d'appel à l'action (CTA) -->
+    <section id="cta-section">
+      <div class="cta-inner">
+        <h3 class="cta-title">Prêt à accélérer votre apprentissage Git ?</h3>
+        <p class="cta-subtitle">Rejoignez GitMaster et progressez avec des guides visuels et pratiques.
+        </p>
+        <div class="cta-buttons">
+          <a href="#" class="cta-btn cta-primary">Commencer maintenant</a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="footer1-gitmaster">
       <div>
         <h3>GitMaster</h3>
         <br />
-        <p style="margin-left: 0; line-height: 25px;">La plateforme visuelle pour<br />
-        apprendre Git et Gitub sans la<br />
-        complexité du terlinal.</p>
+        <p style="margin-left: 0; line-height: 25px">
+          La plateforme visuelle pour<br />
+          apprendre Git et Gitub sans la<br />
+          complexité du terlinal.
+        </p>
       </div>
       <div>
         <h3>Navigation</h3>
         <br />
         <ul class="ul-footer">
-          <li ><a href="accueil">Accueil</a></li>
+          <li><a href="accueil">Accueil</a></li>
           <li><a href="commandes">Commandes</a></li>
           <li><a href="vscode">VS Code</a></li>
           <li><a href="apropos">A Propos</a></li>
@@ -145,8 +167,10 @@
       <div>
         <h3>Newsletters</h3>
         <br />
-        <p style="margin-left: 0; line-height: 25px;">Abonnez-vous pour recevoir des<br />
-        mises à jour et des conseils Git.</p>
+        <p style="margin-left: 0; line-height: 25px">
+          Abonnez-vous pour recevoir des<br />
+          mises à jour et des conseils Git.
+        </p>
         <form>
           <label for="email"><input type="email" name="email" placeholder="Votre email" /></label>
           <button type="submit">
