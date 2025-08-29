@@ -633,6 +633,10 @@ header img:hover {
     margin-right: 8px; /* Espace à droite */
 }
 
+.github-btn a {
+  text-decoration: none;
+}
+
 .github-btn:hover { /* Effet au survol */
     background: #ffffff; /* Orange Git */
     color: #F4F4F9; /* Blanc craie */
