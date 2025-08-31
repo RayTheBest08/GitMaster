@@ -260,7 +260,8 @@ const filterCards = () => {
 
 ## 📄 Licence
 
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+Ce projet est actuellement sans licence spécifique. 
+Contactez les auteurs pour plus d'informations sur l'utilisation.
 
 ## 🙏 Remerciements
 
