@@ -23,15 +23,22 @@
 
   <header>
     <div id="header-gitmaster">
-      <div class="div1-logo-gitmaster" style="padding-left: 20px">
-        <div>
-          <img src="./assets/Gitmasterlogo.jpg" alt="Logo" style="border-radius: 50px" />
+      <div class="div1-logo-gitmaster">
+        <div class="logo-container">
+          <img src="./assets/Gitmasterlogo.jpg" alt="Logo" />
         </div>
-        <div>
+        <div class="title-container">
           <h3>GitMaster</h3>
         </div>
       </div>
-      <nav>
+
+      <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav-menu" id="nav-menu">
         <ul>
           <li><a href="./index.html">Accueil</a></li>
           <li><a href="./Page_commande/index.html">Commandes</a></li>
@@ -39,92 +46,95 @@
           <li><a href="./A_propos/a_propos.html">A Propos</a></li>
         </ul>
       </nav>
+
       <div class="div2-logo-gitmaster">
         <label class="toggle-switch">
           <input type="checkbox" id="darkmode-toggle" />
           <span class="slider"></span>
         </label>
-        <div>
-          <a href="./Page_commande/index.html"><button style="margin-right: 20px">
-            Commencer <i class="fa-solid fa-arrow-right"></i>
-          </button></a> 
+        <div class="button-container">
+          <a href="./Page_commande/index.html">
+            <button class="cta-button">
+              Commencer <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
     </div>
   </header>
   <main>
     <section id="section-maitriser">
-      <div>
-        <h3>
+      <div class="hero-content">
+        <h3 class="hero-title">
           Maîtriser
           <span>Git &<br />
             GitHub</span>
           sans la ligne<br />
           de commande
         </h3>
-        <br />
-        <p>
+        <p class="hero-description">
           Apprenez les concepts essentiels de Git à travers des<br />
           explications visuelles et des simulations dans VS Code. Parfait<br />
           pour les débutants en développement web.
         </p>
-        <br />
-        <div id="explore-btn">
-          <a href="./Page_commande/index.html"><button class="btn1">Explorer les commandes</button></a> 
-          <a href="./Page_VsCode/index.html"><button class="btn2">Apprendre avec VS Code</button></a> 
+        <div class="hero-buttons">
+          <a href="./Page_commande/index.html" class="hero-btn-link">
+            <button class="btn1">Explorer les commandes</button>
+          </a>
+          <a href="./Page_VsCode/index.html" class="hero-btn-link">
+            <button class="btn2">Apprendre avec VS Code</button>
+          </a>
         </div>
       </div>
-      <div>
-        <img src="./assets/Imgit.png" alt="Image mettant l'apprentissage du git en avant" />
+
+      <div class="hero-image">
+        <img src="./assets/imageSectionHero.png" alt="Image mettant l'apprentissage du git en avant" />
       </div>
     </section>
     <section id="how-learning">
-      <h3 class="h3" style="text-align: center; font-size: 3rem; color: white">
+      <h3 class="how-learning-title">
         Pourquoi apprendre avec GitMaster ?
       </h3>
-      <br />
-      <p class="p" style="text-align: center; font-size: 1.5rem; color: white">
+
+      <p class="how-learning-description">
         Notre approche visuelle et interactive rend l'apprentissage de Git
-        accessible à tous,<br />
+        accessible à tous,
         sans la complexité du terminal
       </p>
-      <div class="flex-how-learning">
-        <div class="line-how-learning">
-          <div class="icons-how-learning">
-            <i class="fa-regular fa-eye" style="color: #ffffff; font-size: 2rem; margin-top: 8px"></i>
+
+      <div class="how-learning-grid">
+        <div class="learning-card">
+          <div class="card-icon">
+            <i class="fa-regular fa-eye"></i>
           </div>
-          <br />
-          <h3>Apprentissage Visuel</h3>
-          <br />
-          <p>
-            Des captures d'écran annotées de VS<br />
-            Code pour comprendre Git dans un<br />
+          <h3 class="card-title">Apprentissage Visuel</h3>
+          <p class="card-description">
+            Des captures d'écran annotées de VS
+            Code pour comprendre Git dans un
             environnement familier.
           </p>
         </div>
-        <div class="line-how-learning">
-          <div class="icons-how-learning">
-            <i class="fa-regular fa-eye" style="color: #ffffff; font-size: 2rem; margin-top: 8px"></i>
+
+        <div class="learning-card">
+          <div class="card-icon">
+            <i class="fa-regular fa-eye"></i>
           </div>
-          <br />
-          <h3>Sans Terminal</h3>
-          <br />
-          <p>
-            Apprenez à utiliser Git à travers l'interface<br />
-            graphique de VS Code, sans ligne de<br />
+          <h3 class="card-title">Sans Terminal</h3>
+          <p class="card-description">
+            Apprenez à utiliser Git à travers l'interface
+            graphique de VS Code, sans ligne de
             commande.
           </p>
         </div>
-        <div class="line-how-learning">
-          <div class="icons-how-learning">
-            <i class="fa-regular fa-eye" style="color: #ffffff; font-size: 2rem; margin-top: 8px"></i>
+
+        <div class="learning-card">
+          <div class="card-icon">
+            <i class="fa-regular fa-eye"></i>
           </div>
-          <br />
-          <h3>Pédagogie Progressive</h3>
-          <br />
-          <p>
-            Des concepts de base aux workflows<br />
-            avancés, avec des exercices pratiques à<br />
+          <h3 class="card-title">Pédagogie Progressive</h3>
+          <p class="card-description">
+            Des concepts de base aux workflows
+            avancés, avec des exercices pratiques à
             chaque étape.
           </p>
         </div>
@@ -134,11 +144,12 @@
     <!-- Section d'appel à l'action (CTA) -->
     <section id="cta-section">
       <div class="cta-inner">
-        <h3 class="cta-title">Prêt à accélérer votre apprentissage Git ?</h3>
-        <p class="cta-subtitle">Rejoignez GitMaster et progressez avec des guides visuels et pratiques.
+        <h2 class="cta-title">Prêt à accélérer votre apprentissage Git ? 🚀</h2>
+        <p class="cta-subtitle">
+          Rejoignez notre communauté et transformez votre manière de travailler avec des guides interactifs et visuels.
         </p>
         <div class="cta-buttons">
-          <a href="./Page_VsCode/index.html" class="cta-btn cta-primary">Commencer maintenant</a>
+          <a href="./Page_VsCode/index.html" class="cta-btn">Commencer l'aventure</a>
         </div>
       </div>
     </section>
@@ -190,6 +201,47 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Gestion du menu burger
+    const burgerMenu = document.getElementById('burger-menu');
+    const navMenu = document.getElementById('nav-menu');
+    const body = document.body;
+
+    // Toggle du menu burger
+    burgerMenu.addEventListener('click', function () {
+      burgerMenu.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    });
+
+    // Fermer le menu en cliquant sur un lien
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        burgerMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+      });
+    });
+
+    // Fermer le menu en cliquant en dehors
+    document.addEventListener('click', function (event) {
+      if (!burgerMenu.contains(event.target) && !navMenu.contains(event.target)) {
+        burgerMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+      }
+    });
+
+    // Gestion du thème sombre/clair
+    const darkModeToggle = document.getElementById('darkmode-toggle');
+    if (darkModeToggle) {
+      darkModeToggle.addEventListener('change', function () {
+        console.log('Thème changé:', this.checked ? 'sombre' : 'clair');
+      });
+    }
+  </script>
 </body>
 
 </html>
