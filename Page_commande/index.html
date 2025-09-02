@@ -5,51 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitMaster</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <nav class="navbar">
-            <div class="navbar-left">
-                <a href="#" class="logo">
-                    <img src="./images/logogitMaster.jpg" alt="logo-gitmaster" class="logo-image">
-                    <span>GitMaster</span>
-                </a>
-            </div>
-        
-            <div class="navbar-center">
-                <ul class="nav-links">
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="#">Commande</a></li>
-                    <li><a href="#">Vs Code</a></li>
-                    <li><a href="#">A Propos</a></li>
-                   
+    <div id="header-gitmaster">
+      <div class="div1-logo-gitmaster" style="padding-left: 20px">
+        <div>
+          <img src="./images/logogitMaster.jpg" alt="Logo" style="border-radius: 50px" />
+        </div>
+        <div>
+          <h3>GitMaster</h3>
+        </div>
+      </div>
+    <div class="burger-menu" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="./Page_commande/index.html">Commandes</a></li>
+          <li><a href="../vscode/index.html">VS Code</a></li>
+          <li><a href="../apropos/apropos.html">A Propos</a></li>
+        </ul>
+      </nav>
+      <div class="div2-logo-gitmaster">
+        <label class="toggle-switch">
+          <input type="checkbox" id="darkmode-toggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+
+ 
+        <section class="heros-section">
+
+              <div class="floating-ball ball-1"></div>
+  <div class="floating-ball ball-2"></div>
+  <div class="floating-ball ball-3"></div>
+  <div class="floating-ball ball-4"></div>
+  <div class="floating-ball ball-5"></div>
+  <div class="floating-ball ball-6"></div>
+ 
             
-                </ul>
-                
-            </div>
-        
-            </div>
-            <div class="navbar-right">
-                 <div class="dark-ligth">
-                <button class="dark-mode-toggle">
-                    <span class="toggle-icon">🌙</span>
-                </button>
-                 </div>
-
-                <button class="login-button">Commencer  <i class="fas fas fa-arrow-right"></i> </button>
-            </div>
-
-            <div class="menu-burger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-
-        </nav>
-        <section class="hero-section">
-            <div class="hero-content">
+            <div class="heros-content">
                 <h1>Découvrir les commandes GitHub</h1>
                 <p>Plateforme pour apprendre Git et GitHub sans la complexité du terminal.</p>
                 <div class="search-bar-container">
@@ -61,69 +66,137 @@
                 </div>
               
             </div>
-            <!-- <div class="hero-image">
-                <img src="./images/logogitMaster.jpg" alt="GitMaster Hero Image" class="hero-img">
-            </div> -->
         </section>
 
     </header>
 
-
-    <section class="command-intro">
-        <h3> Commandes sont classéé par références selon leur fonction. 
-            dans cette section, vous trouverez une liste de commandes Git et GitHub les plus courantes, 
-            organisées par catégories. Chaque catégorie contient des commandes spécifiques avec des descriptions et des exemples d'utilisation. 
-            Vous pouvez cliquer sur chaque commande pour en savoir plus.
-    </h3> 
-    </section>
-
     <section class="quick-commands" >
-    <div class="command-card" id="card-git-init">
+    <div class="command-card"  id="card-git-init" style=" display: none;" >
         <h2>git init</h2>
-        <p>Initialise un nouveau dépôt Git local dans le répertoire courant. Crée le sous-dossier .git.</p>
+        <p>Initialise un nouveau dépôt Git local dans 
+            le répertoire courant. Crée le sous-dossier .git.</p>
+            <img src="images/image git init.jpeg" alt="Git Init Image">
     </div>
-    <div class="command-card" id="card-git-clone">
+    <div class="command-card" id="card-git-clone" style=" display: none;" >
         <h2>git clone [url]</h2>
         <p>Copie un dépôt Git distant (ex: GitHub) vers votre machine locale. Télécharge le projet et son historique.</p>
+        <img src="images/Image git clone.jpeg" alt="Git Clone Image">
     </div>
-    <div class="command-card" id="card-git-add">
+    <div class="command-card" id="card-git-add" style=" display: none;">
         <h2>git add .</h2>
         <p>Ajoute les fichiers modifiés à la zone de préparation (staging area), les préparant pour le commit suivant.</p>
+        <img src="images/Image  git add.jpeg" alt="Git Add Image">
     </div>
-    <div class="command-card" id="card-git-status">
+    <div class="command-card" id="card-git-status" style=" display: none;">
         <h2>git status</h2>
         <p>Affiche l'état de votre dépôt : les fichiers modifiés, ceux en attente de commit, et les nouveaux fichiers non suivis.</p>
+        <img src="images/Image git  status.jpeg" alt="Git Status Image">
     </div>
-    <div class="command-card" id="card-git-commit">
+    <div class="command-card" id="card-git-commit" style=" display: none;">
         <h2>git commit -m "[message]"</h2>
         <p>Enregistre un instantané de votre projet. Les fichiers de la zone de préparation sont stockés dans le dépôt local.</p>
+        <img src="images/Image git commit.jpeg" alt="Git Commit Image">
     </div>
-    <div class="command-card" id="card-git-push">
+    <div class="command-card" id="card-git-push" style=" display: none;">
         <h2>git push [remote] [branche]</h2>
         <p>Envoie vos commits locaux vers un dépôt distant. Synchronise votre travail avec celui de votre équipe.</p>
+        <img src="images/Image  git push.jpeg" alt="Git Push Image">
     </div>
-    <div class="command-card" id="card-git-pull">
+    <div class="command-card" id="card-git-pull" style=" display: none;">
         <h2>git pull [remote] [branche]</h2>
         <p>Récupère les modifications du dépôt distant et les fusionne automatiquement dans votre branche locale.</p>
+        <img src="images/Image git pull.jpeg" alt="Git Pull Image">
     </div>
-    <div class="command-card" id="card-git-branch">
+    <div class="command-card" id="card-git-branch" style=" display: none;">
         <h2>git branch</h2>
         <p>Affiche la liste de toutes les branches du dépôt. Permet de voir la branche active.</p>
+        <img src="images/Image git branch.jpeg git branch.jpeg" alt="Git Branch Image">
     </div>
-    <div class="command-card" id="card-git-checkout">
+    <div class="command-card" id="card-git-checkout" style=" display: none;">
         <h2>git checkout [nom-branche]</h2>
         <p>Change de branche. Met à jour les fichiers de votre répertoire de travail pour correspondre à la nouvelle branche.</p>
+        <img src="images/Image  git checkout.jpeg git checkout.jpeg" alt="Git Checkout Image">
     </div>
-    <div class="command-card" id="card-git-merge">
+    <div class="command-card" id="card-git-merge" style=" display: none;">
         <h2>git merge [branche]</h2>
         <p>Intègre les modifications d'une branche spécifiée dans la branche sur laquelle vous êtes actuellement.</p>
+        <img src="images/Image git merge.jpeg" alt="Git Merge Image">
     </div>
-    <div class="command-card" id="card-git-log">
+    <div class="command-card" id="card-git-log" style=" display: none;">
         <h2>git log</h2>
         <p>Affiche l'historique complet des commits de la branche actuelle. Montre qui, quoi et quand les changements ont été faits.</p>
+        <img src="images/Image git log.jpeg" alt="Git Log Image">
     </div>
+    <div class="command-card" id="card-git-reset" style=" display: none;">
+        <h2>git reset [commit]</h2>
+        <p>Réinitialise la branche actuelle à un commit spécifique. Peut modifier l'historique des commits.</p>
+        <img src="images/Image git reset.jpeg" alt="Git Reset Image">
     </div>
+    <div class="command-card" id="card-git-diff" style=" display: none;">
+<h2>git diff</h2>
+<p>Affiche les modifications qui ne sont pas encore dans la zone de préparation (staging area).</p>
+<img src="images/Image git diff.jpeg" alt="Git Diff Image">
+</div>
+
+<div class="command-card" id="card-git-rebase" style=" display: none;">
+<h2>git rebase [nom-branche]</h2>
+<p>Intègre les modifications d'une branche dans une autre en rejouant les commits, pour un historique propre.</p>
+<img src="images/image git rebase.jpeg" alt="Git Rebase Image">
+</div>
+
+<div class="command-card" id="card-git-stash" style=" display: none;">
+<h2>git stash</h2>
+<p>Met de côté temporairement les modifications non validées pour pouvoir changer de branche rapidement.</p>
+<img src="images/image git stash.jpeg" alt="Git Stash Image">
+</div>
+
+<div class="command-card" id="card-git-tag" style=" display: none;">
+<h2>git tag [nom-tag]</h2>
+<p>Crée une étiquette pour marquer des points importants dans l'historique du projet, comme une nouvelle version.</p>
+<img src="images/image git tag.jpeg" alt="Git Tag Image">
+</div>
+
+<div class="command-card" id="card-git-revert" style=" display: none;">
+<h2>git revert [hash-commit]</h2>
+<p>Annule les modifications d'un commit en créant un nouveau commit, sans modifier l'historique.</p>
+<img src="images/image git revert.jpeg" alt="Git Revert Image">
+</div>
+
+<div class="command-card" id="card-git-config" style=" display: none;">
+<h2>git config</h2>
+<p>Permet de configurer l'identité de l'utilisateur et d'autres paramètres pour le dépôt ou de manière globale.</p>
+<img src="images/image git config.jpeg" alt="Git Config Image">
+</div>
+<div class="command-card" id="card-git-checkout-b" style=" display: none;">
+<h2>git checkout -b [nom-nouvelle-branche]</h2>
+<p>Crée et passe immédiatement à une nouvelle branche.</p>
+<img src="images/image git checkout b.jpeg" alt="Git Checkout b Image">
+</div>
+<div class="command-card" id="card-git-remote-v" style=" display: none;">
+<h2>git remote -v</h2>
+<p>Affiche la liste des dépôts distants configurés avec leurs URL.</p>
+<img src="images/image git remote.jpeg" alt="Git Remote Image">
+</div>
+<div class="command-card" id="card-git-fetch" style=" display: none;">
+<h2>git fetch [remote]</h2>
+<p>Télécharge les dernières modifications d'un dépôt distant, sans les intégrer à votre branche locale.</p>
+<img src="images/image git fetch.jpeg" alt="Git Fetch Image">
+</div>
+    
+ 
+    
+     
+    
 </section>
+
+
+    <section class="command-intro">
+        <h3> Les commandes sont regroupées par référence et par fonction.  </h3> 
+         <p>   Cette section présente une liste des commandes Git et GitHub les plus utilisées, 
+            classées par catégories. Chaque catégorie inclut des commandes spécifiques accompagnées de descriptions et d'exemples pratiques.
+             Vous pouvez cliquer sur une commande pour obtenir plus de détails.
+        </p>  
+    </section>
 
 <main>
     <aside class="command-list">
@@ -167,8 +240,9 @@
             <div class="descript-image">
                 <img src="./images/WhatsApp Image 2025-08-11 at 19.16.52.jpeg" alt="image de la commande de vérification"/>
             </div>
-            <mark>Avant de continue ce qu'il faut savoir sur la configuration git </mark>
+           
         </div>
+
         <div class="descrip-command" id="configuration-git-section">
             <div class="configuration">
                 <h1>CONFIGURATION DE GIT</h1>
@@ -184,6 +258,9 @@ git config --global user.name "Votre Nom"
 git config --global user.email "votre.email@example.com"
                     </code></pre>
                 </div>
+            </div>
+            <div class="descript-image">
+                <img src="./images/WhatsApp Image 2025-08-11 at 19.16.52.jpeg" alt="image de la commande de vérification"/>
             </div>
         </div>
         <div class="descrip-command" id="verification-configuration-section">
@@ -379,6 +456,9 @@ git branch
 git checkout nom-de-la-branche
                     </code></pre>
                     <p>Listez les branches disponibles avec git branch. <br>
+                        <pre><code>
+git branch 
+                    </code></pre>
                         Identifiez le nom de la branche vers laquelle vous souhaitez basculer. <br>
                         Utilisez la commande git checkout nom-de-la-branche pour passer sur cette branche.
                     </p>
@@ -558,55 +638,53 @@ git pull origin "nom-de-la-branche"
 
 
 
-
-    <footer>
-        <div class="footer-container">
-           
-            <div id="footerGit">
-                 <div class="footer-logo">
-                <img src="./images/logogitMaster.jpg" alt="logo-gitmaster" class="logo-image">
-                <h2>GitMaster</h2>
-                 </div>
-            <div class="footer-text">
-                
-                <p>La plateforme visuelle pour<br>
-                apprendre Git et GitHub sans<br>
-                la complexité du terminal.</p>
-            </div>
-            </div>
-
-            <div id="footerNav">
-                <h2>Navigation</h2>
-                <nav aria-label="Navigation secondaire">
-                    <ul>
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="#">Commandes</a></li>
-                        <li><a href="#">VS Code</a></li>
-                        <li><a href="#">À propos</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div id="footerNews">
-                <h2>Newsletter</h2>
-                <p>Abonnez-vous pour recevoir des<br>mises à jour et des conseils Git</p>
-                <form>
-                    <input type="email" id="email" placeholder="Votre email" required aria-label="Votre adresse email">
-                    <button type="submit" aria-label="Envoyer l'email"><i class="fa-solid fa-paper-plane"></i></button>
-                </form>
-            </div>
-        </div>
-        <div class="bottom-container">
-        <div class="footer-bottom">
-            <p>&copy; Copyright 2023 GitMaster. Tous droits réservés.</p>
-            <ul>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Confidentialité</a></li>
-                <li><a href="#">Conditions d'utilisation</a></li>
-            </ul>
-        </div>
-        </div>
-    </footer>
+<footer>
+    <div class="footer1-gitmaster">
+      <div>
+        <h3>GitMaster</h3>
+        <br />
+        <p style="margin-left: 0; line-height: 25px">
+          La plateforme visuelle pour<br />
+          apprendre Git et Gitub sans la<br />
+          complexité du terlinal.
+        </p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <br />
+        <ul class="ul-footer">
+          <li><a href="accueil">Accueil</a></li>
+          <li><a href="commandes">Commandes</a></li>
+          <li><a href="vscode">VS Code</a></li>
+          <li><a href="apropos">A Propos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Newsletters</h3>
+        <br />
+        <p style="margin-left: 0; line-height: 25px">
+          Abonnez-vous pour recevoir des<br />
+          mises à jour et des conseils Git.
+        </p>
+        <form>
+          <label for="email"><input type="email" name="email" placeholder="Votre email" /></label>
+          <button type="submit">
+            <i class="fa-regular fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer2-gitmaster">
+      <div>© 2023 GitMaster. Tous droits réservés.</div>
+      <div>
+        <ul>
+          <li><a href="mention-legal">Mentions légales</a></li>
+          <li><a href="confidentialité">Confidentialités</a></li>
+          <li><a href="conditions">Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
        <script>
         document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.nav-list a');
@@ -618,6 +696,11 @@ git pull origin "nom-de-la-branche"
             section.style.display = 'none';
         });
     };
+
+    // afficher la premier section par défaut meme si on actualise la page
+
+    sections[0].style.display = 'block';
+
 
     // Fonction pour afficher une section spécifique
     const showSection = (sectionId) => {
@@ -682,15 +765,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // // Écouteur d'événements pour le champ de recherche (toujours utile pour une recherche en direct)
-    // searchInput.addEventListener('input', () => {
-    //     mainSections.forEach(section => section.style.display = 'none');
-    //     quickCommandsSection.style.display = 'block';
-    //     filterCards();
-    // });
-
-    // Écouteur d'événements pour le bouton "Rechercher"
+    // lorque lon lance la rechercher si le champ est vide ne rien afficher
     searchButton.addEventListener('click', () => {
+        if (searchInput.value.trim() === '') {
+            // Si le champ de recherche est vide, ne rien afficher
+            commandCards.forEach(card => card.style.display = 'none');
+            return;
+        }
         mainSections.forEach(section => section.style.display = 'none');
         quickCommandsSection.style.display = 'block';
         filterCards();
@@ -714,6 +795,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+ // Gestion du menu burger
+    const burgerMenu = document.getElementById('burger-menu');
+    const navMenu = document.getElementById('nav-menu');
+    const body = document.body;
+
+    // Toggle du menu burger
+    burgerMenu.addEventListener('click', function () {
+      burgerMenu.classList.toggle('active');
+      navMenu.classList.toggle('active');
+      body.classList.toggle('menu-open');
+    });
+
+    // Fermer le menu en cliquant sur un lien
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        burgerMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+      });
+    });
+
+    // Fermer le menu en cliquant en dehors
+    document.addEventListener('click', function (event) {
+      if (!burgerMenu.contains(event.target) && !navMenu.contains(event.target)) {
+        burgerMenu.classList.remove('active');
+        navMenu.classList.remove('active');
+        body.classList.remove('menu-open');
+      }
+    });
+
+    // Gestion du thème sombre/clair
+    const darkModeToggle = document.getElementById('darkmode-toggle');
+    if (darkModeToggle) {
+      darkModeToggle.addEventListener('change', function () {
+        console.log('Thème changé:', this.checked ? 'sombre' : 'clair');
+      });
+    }
        </script>
 
 
