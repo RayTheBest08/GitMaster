@@ -23,7 +23,6 @@
 
   <header>
     <div id="header-gitmaster">
-      <!-- Logo et titre alignés à gauche -->
       <div class="div1-logo-gitmaster">
         <div class="logo-container">
           <img src="./assets/Gitmasterlogo.jpg" alt="Logo" />
@@ -33,14 +32,12 @@
         </div>
       </div>
 
-      <!-- Bouton burger pour mobile -->
       <div class="burger-menu" id="burger-menu">
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <!-- Navigation centrée -->
       <nav class="nav-menu" id="nav-menu">
         <ul>
           <li><a href="./index.html">Accueil</a></li>
@@ -50,7 +47,6 @@
         </ul>
       </nav>
 
-      <!-- Contrôles alignés à droite -->
       <div class="div2-logo-gitmaster">
         <label class="toggle-switch">
           <input type="checkbox" id="darkmode-toggle" />
@@ -68,7 +64,6 @@
   </header>
   <main>
     <section id="section-maitriser">
-      <!-- Colonne gauche : Contenu textuel et boutons -->
       <div class="hero-content">
         <h3 class="hero-title">
           Maîtriser
@@ -92,7 +87,6 @@
         </div>
       </div>
 
-      <!-- Colonne droite : Image illustrative -->
       <div class="hero-image">
         <img src="./assets/Imgit.png" alt="Image mettant l'apprentissage du git en avant" />
       </div>
@@ -214,47 +208,7 @@
   </footer>
 
   <!-- Script pour le menu burger responsive -->
-  <script>
-    // Gestion du menu burger
-    const burgerMenu = document.getElementById('burger-menu');
-    const navMenu = document.getElementById('nav-menu');
-    const body = document.body;
-
-    // Toggle du menu burger
-    burgerMenu.addEventListener('click', function () {
-      burgerMenu.classList.toggle('active');
-      navMenu.classList.toggle('active');
-      body.classList.toggle('menu-open');
-    });
-
-    // Fermer le menu en cliquant sur un lien
-    const navLinks = document.querySelectorAll('.nav-menu a');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        burgerMenu.classList.remove('active');
-        navMenu.classList.remove('active');
-        body.classList.remove('menu-open');
-      });
-    });
-
-    // Fermer le menu en cliquant en dehors
-    document.addEventListener('click', function (event) {
-      if (!burgerMenu.contains(event.target) && !navMenu.contains(event.target)) {
-        burgerMenu.classList.remove('active');
-        navMenu.classList.remove('active');
-        body.classList.remove('menu-open');
-      }
-    });
-
-    // Gestion du thème sombre/clair (fonctionnalité existante)
-    const darkModeToggle = document.getElementById('darkmode-toggle');
-    if (darkModeToggle) {
-      darkModeToggle.addEventListener('change', function () {
-        // Logique du thème (à implémenter selon vos besoins)
-        console.log('Thème changé:', this.checked ? 'sombre' : 'clair');
-      });
-    }
-  </script>
+  <script src="./app.js"></script>
 </body>
 
 </html>

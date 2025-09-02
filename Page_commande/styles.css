@@ -850,11 +850,8 @@ margin: 0;
 
 
 
-
-
-
-
-
+}
+}
 
 /* Footer */
 
@@ -993,4 +990,4 @@ footer a {
     #footerNews button {
         padding: 0.75rem;
     }
-}
+  }  
