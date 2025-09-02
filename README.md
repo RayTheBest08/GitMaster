@@ -116,18 +116,6 @@ cd GitMaster
 open index.html
 ```
 
-### Installation pour le développement
-```bash
-# Avec un serveur local (Python)
-python -m http.server 8000
-
-# Avec Node.js (si disponible)
-npx serve .
-
-# Avec PHP
-php -S localhost:8000
-```
-
 ## 💻 Utilisation
 
 ### Navigation principale
