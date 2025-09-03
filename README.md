@@ -16,7 +16,6 @@
 - [Fonctionnalités techniques](#-fonctionnalités-techniques)
 - [Responsive Design](#-responsive-design)
 - [Contribution](#-contribution)
-- [Licence](#-licence)
 
 ## 🎯 À propos
 
